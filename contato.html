@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Gaffber</title>
+  <meta name="description" content="Entre em contato com o Gaffber para dúvidas, sugestões ou parcerias.">
+  <link rel="canonical" href="https://GFFBR.github.io/contato.html">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lora:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white min-h-screen font-sans">
+
+  <header class="bg-black/80 backdrop-blur-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]">Gaffber</a>
+      <div class="flex items-center space-x-4">
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="nav-link text-fuchsia-400 hover:text-yellow-300">Início</a>
+          <a href="projetos.html" class="nav-link text-fuchsia-400 hover:text-yellow-300">Projetos</a>
+          <a href="sobre.html" class="nav-link text-fuchsia-400 hover:text-yellow-300">Sobre</a>
+          <a href="contato.html" class="nav-link text-fuchsia-400 hover:text-yellow-300">Contato</a>
+        </div>
+        <button id="theme-toggle" class="text-yellow-400 hover:text-yellow-300" aria-label="Alternar tema de cores">
+          <svg id="theme-toggle-dark-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+          <svg id="theme-toggle-light-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path></svg>
+        </button>
+        <button id="mobile-menu-button" class="md:hidden text-yellow-400" aria-label="Abrir menu de navegação">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+      <a href="index.html" class="block py-2 text-fuchsia-400 hover:text-yellow-300 nav-link">Início</a>
+      <a href="projetos.html" class="block py-2 text-fuchsia-400 hover:text-yellow-300 nav-link">Projetos</a>
+      <a href="sobre.html" class="block py-2 text-fuchsia-400 hover:text-yellow-300 nav-link">Sobre</a>
+      <a href="contato.html" class="block py-2 text-fuchsia-400 hover:text-yellow-300 nav-link">Contato</a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-16">
+    <h1 class="text-4xl font-extrabold text-fuchsia-500 drop-shadow-[0_0_10px_rgba(236,72,153,0.8)] mb-8 text-center">Fale Conosco</h1>
+    <div class="max-w-3xl mx-auto text-gray-300 space-y-6 bg-black/60 backdrop-blur-sm p-6 rounded-lg border border-fuchsia-500">
+      <p>
+        Tem alguma dúvida, sugestão ou proposta de parceria? Estamos prontos para ouvir você.
+      </p>
+      <p>
+        Envie um e-mail para: <a href="mailto:gaffber@gmail.com" class="text-cyan-400 hover:text-yellow-300">gaffber@gmail.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="border-t border-gray-200 dark:border-gray-700 mt-16">
+    <div class="container mx-auto px-6 py-8 text-center text-gray-500 dark:text-gray-400">
+      <div class="mb-4">
+        <button id="custom-translate-button" lang="en-US" class="text-cyan-400 hover:text-yellow-300 transition-colors">
+          🌐 Translate Page
+        </button>
+      </div>
+      <p>
+        &copy; <span id="year"></span> Gaffber. <span lang="en-US">All rights reserved.</span>
+        <span class="mx-2">|</span>
+        <a href="politica-de-privacidade.html" lang="en-US" class="hover:text-fuchsia-400 transition-colors">Privacy</a>
+        <span class="mx-2">|</span>
+        <a href="termos-de-uso.html" lang="en-US" class="hover:text-fuchsia-400 transition-colors">Terms</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <div id="translation-popup" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+    <div class="bg-gray-900 border border-fuchsia-500 rounded-lg shadow-xl w-full max-w-md flex flex-col">
+      <h3 lang="en-US" class="text-xl font-bold text-cyan-400 p-4 border-b border-gray-700">Select Language</h3>
+
+      <div class="p-4 border-b border-gray-700">
+        <input type="text" id="language-search-input" lang="en-US" placeholder="Search language..." class="w-full bg-gray-800 border border-gray-600 rounded-md p-2 text-white focus:outline-none focus:ring-2 focus:ring-fuchsia-500">
+      </div>
+      <div id="language-list" class="p-4 space-y-2 overflow-y-auto" style="max-height: 50vh;">
+      </div>
+      <div class="p-4 border-t border-gray-700 text-right">
+        <button id="close-popup-button" lang="en-US" class="px-4 py-2 bg-fuchsia-600 hover:bg-fuchsia-500 rounded-md">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
